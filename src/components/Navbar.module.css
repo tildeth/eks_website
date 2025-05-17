@@ -1,7 +1,18 @@
-.navbar {
+.full_nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     background-color: #111;
     padding: 1rem 2rem;
-  }
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row; 
+}
+
   
   .navList {
     list-style: none;
@@ -21,4 +32,15 @@
   .navList a:hover {
     text-decoration: underline;
   }
+
+  .some_nav{
+  gap: 2rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  }
+
+  .some_nav:hover{
+    transform: scale(1.15);
+  }
+  
   
