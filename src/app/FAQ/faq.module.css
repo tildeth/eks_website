@@ -10,15 +10,8 @@
   .heading {
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
   
-  .list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .list li {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-  }
+
   

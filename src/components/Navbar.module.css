@@ -1,46 +1,117 @@
-.full_nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: #111;
-    padding: 1rem 2rem;
-    justify-content: space-between;
-    align-items: center;
+.full_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+position: relative;  
+padding: 1rem 2rem;
+
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row; 
+.navbar {
+  display: flex;
+  flex-direction: row;
 }
 
-  
-  .navList {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    
-  }
-  
-  .navList a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .navList a:hover {
-    text-decoration: underline;
-  }
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
 
-  .some_nav{
+.navList a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.navList a:hover {
+  font-weight: bold;
+  transform: scale(1.4);
+}
+
+.active {
+  background-color: var(--accent-color);
+  padding: 20px;
+  color: var(--secondary-color);
+  border-radius: 19px;
+}
+
+.some_nav {
   gap: 2rem;
   margin-left: 2%;
   margin-right: 2%;
+}
+
+.some_nav:hover {
+  transform: scale(1.15);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.burgerLine {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+    border-radius: 19px;
+
+}
+
+/* Når burgeren er åben (bliver til X) */
+.burger.open .burgerLine:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  width: 50px;
+}
+
+.burger.open .burgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open .burgerLine:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  width: 50px;
+}
+  
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
   }
 
-  .some_nav:hover{
-    transform: scale(1.15);
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 2rem 1rem;
   }
-  
-  
+
+  .showMenu {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+}
