@@ -7,6 +7,8 @@
     --primary-color: #1e1e1e; /* Sort */
     --secondary-color: #f4f4f4; /* Hvid */
     --accent-color: #920022; /* Rød */
+    --bg-color:#222; /*Lysgrå*/
+
 }
 
 body {

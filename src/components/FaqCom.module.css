@@ -6,25 +6,20 @@
     flex-direction: column;
     gap: 1.5rem;
     border-radius: 27px;
+    color: var(--secondary-color);
     background-color: #1e1e1e;
-    color: #f4f4f4;
-  }
-  
-  
-  .faqHeading {
-    text-align: center;
-    font-size: 2rem;
-    font-family: "Lexend", sans-serif;
-    color: #f4f4f4;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+
   }
   
   .summary {
     cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 1rem;
     position: relative;
     padding-right: 2rem;
     list-style: none;
+    text-transform: uppercase;
   }
   
   .summary::after {
@@ -46,7 +41,8 @@
     font-size: 1rem;
     line-height: 1.6;
     text-align: left;
-    color: #ccc;
+    color: var(--secondary-color);
+    font-family: "poppins", sans-serif;
   }
   
   .line_faq {
@@ -63,7 +59,7 @@
     }
   
     .summary {
-      font-size: 1rem;
+      font-size: 0.8 rem;
     }
   
     .faqHeading {

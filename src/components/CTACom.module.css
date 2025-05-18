@@ -1,0 +1,23 @@
+.card {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+.card h2 {
+  font-family: "Lexend Exa", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}

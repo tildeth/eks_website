@@ -4,7 +4,10 @@
     padding: 2rem;
     background-color: #222;
     border-radius: 8px;
-    color: #eee;
+  }
+
+  .introtex{
+    text-align: center;
   }
   
   .heading {
