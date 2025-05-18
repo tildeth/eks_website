@@ -1,0 +1,81 @@
+.reviewSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  color: white;
+  border-radius: 12px;
+}
+
+.imageWrapper img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.reviewContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.reviewText {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  min-height: 80px;
+}
+
+.reviewerInfo {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: left;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.reviewerName {
+  font-style: italic;
+  font-family: "poppins";
+}
+
+.stars {
+  display: flex;
+  gap: 0.2rem;
+  font-size: 2rem;
+}
+
+.starFilled {
+  color: gold;
+}
+
+.starEmpty {
+  color: #555;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot,
+.activeDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.activeDot {
+  background-color: white;
+}

@@ -1,19 +1,40 @@
-.booking {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 1rem 2rem;
-    background-color: #222;
-    border-radius: 8px;
-    text-align: center;
-    color: #eee;
-  }
-  
-  .heading {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .text {
-    font-size: 1.1rem;
-  }
-  
+.tabNav {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.tabButton {
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  font-family: "Lexend exa", sans-serif;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.tabButton:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+.active {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.tabContent {
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.infoBlock{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+}
