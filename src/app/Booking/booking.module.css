@@ -37,4 +37,12 @@
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.imagewrapper{
+width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }

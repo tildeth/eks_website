@@ -1,12 +1,16 @@
-export default function FAQPage() {
-    return (
-      <section className={styles.faq}>
-        <h2 className={styles.heading}>Ofte stillede spørgsmål</h2>
-        <ul className={styles.list}>
-          <li>🎧 Hvilke genre spiller du? – Alt fra house til techno og lounge.</li>
-          <li>📆 Hvor tidligt skal jeg booke? – Gerne mindst 2 uger i forvejen.</li>
-          <li>🕺 Tager du imod specialønsker? – Ja, selvfølgelig!</li>
-        </ul>
-      </section>
-    );
+import styles from './ommig.module.css';
+import CTACom from '@/components/CTACom';
+import OmMigCom from '@/components/OmMigCom';
+
+export default function Om_MigPage() {
+  return (
+    <section className={styles.ommig}>
+      <OmMigCom />
+     <CTACom 
+      title="Skal jeg være din næste dj?"
+      description="Lyder jeg som den rette DJ til dit næste event? Lad os tage en snak om, hvordan jeg kan bidrage med musik og god stemning!"
+      buttonText="BOOK HER"
+      />
+    </section>
+  );
 }
