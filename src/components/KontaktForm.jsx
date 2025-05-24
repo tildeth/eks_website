@@ -48,7 +48,7 @@ export default function KontaktForm() {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit} autoComplete="on">
-      <label className={styles.label} htmlFor="navn">Navn</label>
+      <label className={styles.label} htmlFor="navn">Navn<span className={styles.required}>*</span></label>
       <input
         type="text"
         id="navn"
@@ -60,7 +60,7 @@ export default function KontaktForm() {
         autoComplete="name"
       />
 
-      <label className={styles.label} htmlFor="email">Email</label>
+      <label className={styles.label} htmlFor="email">Email<span className={styles.required}>*</span></label>
       <input
         type="email"
         id="email"
@@ -72,7 +72,7 @@ export default function KontaktForm() {
         autoComplete="email"
       />
 
-      <label className={styles.label} htmlFor="telefon">Telefon</label>
+      <label className={styles.label} htmlFor="telefon">Telefon<span className={styles.required}>*</span></label>
       <input
         type="tel"
         id="telefon"
@@ -84,7 +84,7 @@ export default function KontaktForm() {
         autoComplete="tel"
       />
 
-      <label className={styles.label} htmlFor="kategori">Hvad drejer det sig om?</label>
+      <label className={styles.label} htmlFor="kategori">Hvilken type fest holder i?<span className={styles.required}>*</span></label>
       <select
         id="kategori"
         name="kategori"
@@ -99,7 +99,7 @@ export default function KontaktForm() {
         <option value="Andet">Andet</option>
       </select>
 
-      <label className={styles.label} htmlFor="besked">Besked</label>
+      <label className={styles.label} htmlFor="besked">Besked<span className={styles.required}>*</span></label>
       <textarea
         id="besked"
         name="besked"
@@ -118,7 +118,7 @@ export default function KontaktForm() {
       )}
       {status === "error" && (
         <div className={styles.error}>
-          Der opstod en fejl. Prøv igen senere.
+          Der opstod en fejl... Prøv igen!
         </div>
       )}
     </form>

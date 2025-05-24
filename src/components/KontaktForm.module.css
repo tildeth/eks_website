@@ -43,8 +43,7 @@
 }
 
 .button:hover {
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
+   transform: scale(1.05);
 }
 
 .success,
@@ -52,7 +51,8 @@
   padding: 0.75rem;
   border-radius: 8px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
 }
 
 .success {
@@ -63,4 +63,9 @@
 .error {
   background-color: #f8d7da;
   color: #721c24;
+}
+
+.required {
+  color: red;
+  margin-left: 0.25rem;
 }

@@ -63,8 +63,8 @@ export default function Navbar() {
             <Image
               src="/Logo_pri2.avif"
               alt="Til forsiden"
-              width={120}
-              height={50}
+              width={180}
+              height={75}
               priority
             />
           </Link>
