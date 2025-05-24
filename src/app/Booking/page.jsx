@@ -30,7 +30,7 @@ const contentData = {
     text: `Uanset om det er bryllup, fødselsdag, jubilæum eller en anden særlig anledning, sørger jeg for, at musikken matcher både stemningen og dine ønsker. Med mange års erfaring i at læse publikum og skabe det rette flow, sikrer jeg, at dansegulvet ikke står tomt. Jeg spiller bredt – lige fra festklassikere til nyeste hits – og tilpasser altid stilen til gæsterne og stemningen. Derudover tilbyder jeg professionelt lyd- og lysudstyr og rådgiver gerne om effekter, lyssætning og andre detaljer, der gør din fest helt uforglemmelig.`,
     image: "/privat1.jpg",
     imageAlt: "Privat fest billede",
-    anmeldImg: "/privatand.jpg",
+    anmeldImg: "/privatand.JPG",
   },
   erhverv: {
     title: "Erhverv",
@@ -42,7 +42,7 @@ og højt humør.
 Musikken skræddersys til jeres ønsker – fra afslappet loungestemning under middagen til fuld fest senere på aftenen.`,
     image: "/firma1.jpg",
     imageAlt: "Firma fest billede",
-    anmeldImg: "/firmaand.jpg",
+    anmeldImg: "/firmaand.JPG",
   },
   klub: {
     title: "Klub booking",
@@ -50,7 +50,7 @@ Musikken skræddersys til jeres ønsker – fra afslappet loungestemning under m
 Musikken spænder bredt, men altid med fokus på flow, energi og en fest, man husker. Jeg stiller med professionelt gear, hvis det ønskes, og er vant til at samarbejde med lydfolk, teknikere og scenecrew for at sikre en gnidningsfri afvikling.`,
     image: "/klub1.jpg",
     imageAlt: "Klub fest billede",
-    anmeldImg: "/kluband.jpg",
+    anmeldImg: "/kluband.JPG",
   },
 };
 

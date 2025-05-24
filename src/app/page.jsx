@@ -75,7 +75,7 @@ export default function HomePage() {
       <StatsCounter />
 
       <Anmeld
-        imageSrc="/landing2.jpg"
+        imageSrc="/landing2.JPG"
         reviews={allReviews.alle}
         title="Anmeldelser"
       />

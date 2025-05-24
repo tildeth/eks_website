@@ -13,7 +13,7 @@ export default function OmMigCom() {
 Det hele begyndte med en kærlighed til musik og en nysgerrighed på at få folk til at danse, og det er stadig dét, der driver mig i dag. 
 Når jeg ikke står bag pulten, nyder jeg livet med familie, venner og min hund Kanye. 
 For mig handler en god fest om mere end bare lyd – det handler om stemning, nærvær og at skabe minder sammen.`,
-      image: "/ommig1.jpg",
+      image: "/ommig1.JPG",
       reverse: false,
     },
     {
@@ -23,7 +23,7 @@ For mig handler en god fest om mere end bare lyd – det handler om stemning, n�
 Det var her, jeg lærte at forstå publikum og bygge et sæt op fra bunden – beat for beat. Gennem årene har jeg udviklet mig som DJ og udvidet mit repertoire, og i dag lever jeg af at spille til klubnætter, firmaevents og private fester. 
 
 Selvom stilen har ændret sig undervejs, er passionen for musikken og oplevelsen den samme.`,
-      image: "/ommig2.jpg",
+      image: "/ommig2.JPG",
       reverse: true,
     },
   ];
