@@ -50,7 +50,7 @@ export default function HomePage() {
         name: "Melissa, Eventbooker",
         stars: 5,
       },
-      { text: "NOT Nice", name: "Jara, Old Irish Pub", stars: 1 },
+      { text: "Nice, very professionel", name: "Jara, Old Irish Pub", stars: 5 },
     ],
   };
 
