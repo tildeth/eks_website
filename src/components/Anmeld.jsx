@@ -35,6 +35,15 @@ export default function Anmeld({ imageSrc, reviews, title = "Anmeldelser" }) {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeIndex}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            onDragEnd={(event, info) => {
+              if (info.offset.x < -50) {
+                nextReview();
+              } else if (info.offset.x > 50) {
+                prevReview();
+              }
+            }}
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -30 }}
