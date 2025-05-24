@@ -2,14 +2,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-position: relative;  
-padding: 1rem 2rem;
- 
+  position: relative;
+  padding: 1rem 2rem;
+  z-index: 1000;
 }
 
 .navbar {
-  display: flex;
-  flex-direction: row;
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45vw;
 }
 
 .navList {
@@ -20,28 +22,28 @@ padding: 1rem 2rem;
   padding: 0;
 }
 
-.navList a {
+.navLink {
   color: var(--secondary-color);
   text-decoration: none;
   font-family: "Lexend Exa", sans-serif;
+  transition: transform 0.2s ease, font-weight 0.2s ease;
 }
 
-.navList a:hover {
+.navLink:hover {
   font-weight: bold;
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
 
 .active {
   background-color: var(--accent-color);
-  padding: 20px;
+  padding: 0.5rem 1rem;
   color: var(--secondary-color);
   border-radius: 19px;
 }
 
 .some_nav {
-  gap: 2rem;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin: 0 0.5rem;
+  transition: transform 0.2s ease;
 }
 
 .some_nav:hover {
@@ -67,14 +69,12 @@ padding: 1rem 2rem;
   background-color: white;
   transition: all 0.3s ease-in-out;
   transform-origin: center;
-    border-radius: 19px;
-
+  border-radius: 2px;
 }
 
-/* Når burgeren er åben (bliver til X) */
+/* Burger åben (X) */
 .burger.open .burgerLine:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
-  width: 50px;
 }
 
 .burger.open .burgerLine:nth-child(2) {
@@ -83,13 +83,22 @@ padding: 1rem 2rem;
 
 .burger.open .burgerLine:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
-  width: 50px;
 }
-  
 
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* ============ Mobilvenlig styling ============ */
 @media (max-width: 768px) {
   .burger {
     display: flex;
+  }
+
+    .socialIcons {
+    width: 100%;
   }
 
   .navbar {
@@ -101,7 +110,8 @@ padding: 1rem 2rem;
     left: 0;
     right: 0;
     display: none;
-    padding: 2rem 1rem;
+    padding: 1rem 0rem;
+    width: 100vw;
   }
 
   .showMenu {
@@ -111,7 +121,11 @@ padding: 1rem 2rem;
   .navList {
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 2rem;
     align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .navLink {
+    font-size: 1.25rem;
   }
 }

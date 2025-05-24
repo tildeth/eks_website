@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   gap: 2rem;
@@ -22,17 +22,17 @@
 }
 
 .statNumber {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  font-family: "Lexend", sans-serif;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 .statLabel {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lexend Exa", sans-serif;
 }
 
 @media (max-width: 768px) {

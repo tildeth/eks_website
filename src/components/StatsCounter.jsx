@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./StatsCounter.module.css";
 
 const counters = [
-  { to: 12, label: "År med erfaring", suffix: "", duration: 2000 },
+  { to: 12, label: "År med erfaring", suffix: "+", duration: 2000 },
   { to: 2000, label: "Tilfredse kunder", suffix: "+", duration: 1000 }, // hurtigere!
   { to: 110, label: "Dedikation", suffix: "%", duration: 2000 },
 ];

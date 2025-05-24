@@ -1,5 +1,5 @@
 .faq {
-    margin: 7% auto;
+    margin: 0 auto;
     padding: 5% 2rem;
     max-width: 900px;
     display: flex;
@@ -7,9 +7,6 @@
     gap: 1.5rem;
     border-radius: 27px;
     color: var(--secondary-color);
-    background-color: #1e1e1e;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-
   }
   
   .summary {

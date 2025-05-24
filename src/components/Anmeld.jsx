@@ -35,7 +35,7 @@ export default function Anmeld({ imageSrc, reviews, title = "Anmeldelser" }) {
         </div>
 
         <div className={styles.controls}>
-          <button onClick={prevReview}>←</button>
+          <button className={styles.andbtn} onClick={prevReview}>←</button>
           <div className={styles.dots}>
             {reviews.map((_, i) => (
               <span
@@ -45,7 +45,7 @@ export default function Anmeld({ imageSrc, reviews, title = "Anmeldelser" }) {
               />
             ))}
           </div>
-          <button onClick={nextReview}>→</button>
+          <button className={styles.andbtn} onClick={nextReview}>→</button>
         </div>
       </div>
     </section>
