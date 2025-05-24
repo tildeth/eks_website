@@ -27,21 +27,27 @@ const reviewsData = {
 const contentData = {
   privat: {
     title: "Privat",
-    text: `Uanset om det er bryllup, fødselsdag...`,
+    text: `Uanset om det er bryllup, fødselsdag, jubilæum eller en anden særlig anledning, sørger jeg for, at musikken matcher både stemningen og dine ønsker. Med mange års erfaring i at læse publikum og skabe det rette flow, sikrer jeg, at dansegulvet ikke står tomt. Jeg spiller bredt – lige fra festklassikere til nyeste hits – og tilpasser altid stilen til gæsterne og stemningen. Derudover tilbyder jeg professionelt lyd- og lysudstyr og rådgiver gerne om effekter, lyssætning og andre detaljer, der gør din fest helt uforglemmelig.`,
     image: "/privat1.jpg",
     imageAlt: "Privat fest billede",
     anmeldImg: "/privatand.jpg",
   },
   erhverv: {
     title: "Erhverv",
-    text: `Skal din virksomhed afholde en firmafest...`,
+    text: `Skal din virksomhed afholde en firmafest, julefrokost, sommerfest eller et 
+andet erhvervsarrangement? 
+Som DJ til erhverv leverer jeg en professionel og fleksibel musikoplevelse, der matcher jeres målgruppe og stemningen. Med stor erfaring i at spille for alle aldersgrupper og brancher, 
+sørger jeg for et dansegulv med god energi 
+og højt humør. 
+Musikken skræddersys til jeres ønsker – fra afslappet loungestemning under middagen til fuld fest senere på aftenen.`,
     image: "/firma1.jpg",
     imageAlt: "Firma fest billede",
     anmeldImg: "/firmaand.jpg",
   },
   klub: {
     title: "Klub booking",
-    text: `Skal du bruge en DJ til klub, diskotek...`,
+    text: `Skal du bruge en DJ til klub, diskotek eller festival? Jeg leverer høj energi, stærk musikalsk timing og et solidt mix, der holder publikum i gang hele natten. Med erfaring fra både intime klubmiljøer og udendørsscener tilpasser jeg mit set og vibe til stemningen og publikum – uanset størrelse og format. 
+Musikken spænder bredt, men altid med fokus på flow, energi og en fest, man husker. Jeg stiller med professionelt gear, hvis det ønskes, og er vant til at samarbejde med lydfolk, teknikere og scenecrew for at sikre en gnidningsfri afvikling.`,
     image: "/klub1.jpg",
     imageAlt: "Klub fest billede",
     anmeldImg: "/kluband.jpg",

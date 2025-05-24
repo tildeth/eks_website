@@ -86,7 +86,7 @@
 .active {
   background-color: var(--accent-color);
   padding: 0.5rem 1rem;
-  border-radius: 19px;
+  border-radius: 9px;
 }
 
 /* Sociale ikoner */
