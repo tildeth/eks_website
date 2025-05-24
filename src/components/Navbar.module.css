@@ -1,19 +1,67 @@
-.full_nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Wrapper og navbar */
+.navbarWrapper {
+  width: 100%;
   position: relative;
-  padding: 1rem 2rem;
   z-index: 1000;
 }
 
 .navbar {
-   display: flex;
-  align-items: center;
+  display: flex;
   justify-content: space-between;
-  width: 45vw;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 
+/* Logo */
+.logo {
+  flex-shrink: 0;
+}
+
+/* Burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.burgerLine {
+  width: 100%;
+  height: 3px;
+  background-color: var(--secondary-color);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Burger animation */
+.burger.open .burgerLine:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger.open .burgerLine:nth-child(2) {
+  opacity: 0;
+}
+.burger.open .burgerLine:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Menu desktop*/
+.menuDesktop {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Menu mobile */
+.menuMobile {
+  display: none;
+}
+
+/* Navigation liste */
 .navList {
   list-style: none;
   display: flex;
@@ -22,11 +70,12 @@
   padding: 0;
 }
 
+/* Links */
 .navLink {
-  color: var(--secondary-color);
   text-decoration: none;
+  color: var(--secondary-color);
   font-family: "Lexend Exa", sans-serif;
-  transition: transform 0.2s ease, font-weight 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .navLink:hover {
@@ -37,95 +86,50 @@
 .active {
   background-color: var(--accent-color);
   padding: 0.5rem 1rem;
-  color: var(--secondary-color);
   border-radius: 19px;
 }
 
-.some_nav {
-  margin: 0 0.5rem;
-  transition: transform 0.2s ease;
+/* Sociale ikoner */
+.socialIcons {
+  display: flex;
+  gap: 1rem;
 }
 
 .some_nav:hover {
   transform: scale(1.15);
+  transition: transform 0.2s ease;
 }
 
-.burger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 22px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1001;
-}
-
-.burgerLine {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  transition: all 0.3s ease-in-out;
-  transform-origin: center;
-  border-radius: 2px;
-}
-
-/* Burger åben (X) */
-.burger.open .burgerLine:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger.open .burgerLine:nth-child(2) {
-  opacity: 0;
-}
-
-.burger.open .burgerLine:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-.socialIcons {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-/* ============ Mobilvenlig styling ============ */
+/* ========== Mobile styles ========== */
 @media (max-width: 768px) {
   .burger {
     display: flex;
   }
 
-    .socialIcons {
-    width: 100%;
+  .menuDesktop {
+    display: none;
   }
 
-  .navbar {
+  .menuMobile {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: #111;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    display: none;
-    padding: 1rem 0rem;
-    width: 100vw;
-  }
-
-  .showMenu {
-    display: flex;
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    z-index: 1000;
   }
 
   .navList {
     flex-direction: column;
-    gap: 1.5rem;
     align-items: center;
-    margin-bottom: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
-  .navLink {
-    font-size: 1.25rem;
+  .socialIcons {
+    justify-content: center;
   }
 }

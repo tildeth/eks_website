@@ -3,20 +3,44 @@
   border-radius: 16px;
   text-align: center;
   max-width: 400px;
-  margin: auto;
+  margin: 2rem auto;
   border: 3px solid var(--bg-color);
-  margin-top: 25px;
+  transition: transform 0.3s ease;
+  
 }
 
-.card h2 {
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
   font-family: "Lexend Exa", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
-.card p {
+.description {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  line-height: 1.6;
   margin-bottom: 2rem;
+}
+
+/* Responsiv tilpasning */
+@media (max-width: 600px) {
+  .card {
+    padding: 1.5rem;
+    max-width: 90%;
+    margin-left: 5%;
+  margin-right: 5%;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+  }
 }

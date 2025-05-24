@@ -1,16 +1,21 @@
 .footer {
-  
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-  }
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
 
-  .some_footer{
-    margin-left: 2%;
-    margin-right: 2%;
-  }
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
 
-  .some_footer:hover{
-    transform: scale(1.15);
-  }
-  
+.some_footer {
+  transition: transform 0.3s ease;
+  margin: 0 0.5rem;  
+  cursor: pointer;
+}
+
+.some_footer:hover {
+  transform: scale(1.1);
+}

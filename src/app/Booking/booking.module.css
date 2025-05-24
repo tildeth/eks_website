@@ -1,26 +1,46 @@
+.booking {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .tabNav {
   display: flex;
   gap: 1rem;
-  margin: 2rem 0;
   justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .tabButton {
-  padding: 0.75rem 1.5rem;
-  background-color: transparent;
-  border: 2px solid var(--accent-color);
+ background-color: var(--bg-color);
   color: var(--secondary-color);
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 19px;
   cursor: pointer;
-  font-family: "Lexend exa", sans-serif;
-  border-radius: 8px;
-  transition: all 0.2s ease-in-out;
+  font-family: 'Lexend Exa', sans-serif;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
   text-transform: uppercase;
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
 .tabButton:hover {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.tabButton:active {
+  transform: scale(0.95);
 }
 
 .active {
@@ -29,20 +49,35 @@
 }
 
 .tabContent {
-  padding: 2rem;
   border-radius: 12px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.infoBlock{
+.infoBlock {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
 }
 
-.imagewrapper{
-width: 400px;
+.imagewrapper {
+  width: 100%;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+}
+
+/* Responsivt for mindre skærme */
+@media (max-width: 768px) {
+  .infoBlock {
+    grid-template-columns: 1fr;
+  }
+
+  .imagewrapper {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
 }

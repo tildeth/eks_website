@@ -1,66 +1,57 @@
 .faq {
-    margin: 0 auto;
-    padding: 5% 2rem;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    border-radius: 27px;
-    color: var(--secondary-color);
+  margin: 0 auto;
+  padding: 5% 2rem;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 27px;
+  color: var(--secondary-color);
+}
+
+.summary {
+  cursor: pointer;
+  font-family: "Lexend Exa", sans-serif;
+  font-size: 1rem;
+  position: relative;
+  padding-right: 2rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.detailsContent {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  color: var(--secondary-color);
+  margin-top: 1rem;
+}
+
+.line_faq {
+  background-color: #444;
+  height: 1px;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .faq {
+    padding: 2rem 1rem;
   }
-  
+
   .summary {
-    cursor: pointer;
-    font-family: "Lexend Exa", sans-serif;
-    font-size: 1rem;
-    position: relative;
-    padding-right: 2rem;
-    list-style: none;
-    text-transform: uppercase;
+    font-size: 0.9rem;
   }
-  
-  .summary::after {
-    content: '+';
-    font-size: 1.5rem;
-    font-weight: bold;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  details[open] .summary::after {
-    content: '-';
-  }
-  
+
   .detailsContent {
-    padding-top: 1rem;
-    font-size: 1rem;
-    line-height: 1.6;
-    text-align: left;
-    color: var(--secondary-color);
-    font-family: "poppins", sans-serif;
+    font-size: 0.9rem;
   }
-  
-  .line_faq {
-    background-color: #444;
-    height: 1px;
-    width: 100%;
-    margin: 1rem 0;
-  }
-  
-  /* Responsive tweak (valgfri) */
-  @media (max-width: 600px) {
-    .faq {
-      padding: 2rem 1rem;
-    }
-  
-    .summary {
-      font-size: 0.8 rem;
-    }
-  
-    .faqHeading {
-      font-size: 1.5rem;
-    }
-  }
-  
+}

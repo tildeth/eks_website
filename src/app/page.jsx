@@ -1,21 +1,14 @@
-"use client"
+"use client";
 
-import styles from "./page.module.css"
-import Button from "@/components/Button";
+import styles from "./page.module.css";
 import Image from "next/image";
 import StatsCounter from "@/components/StatsCounter";
 import Anmeld from "@/components/Anmeld";
 import CTACom from '@/components/CTACom';
-
+import Link from "next/link";
 
 export default function HomePage() {
-  const buttonData =
-    {
-      text: "Book her",
-      bgColor: "#1e1e1e",
-    };
-
-   const allReviews = {
+  const allReviews = {
     alle: [
       {
         text: "Super professionel og venlig oplevelse – anbefales varmt!",
@@ -64,32 +57,33 @@ export default function HomePage() {
   return (
     <section>
       <section className={styles.hero}>
-      <Image
-        src="/hero.jpg"
-        alt="Hero"
-        fill
-        priority
-        className={styles.heroimg}
+        <Image
+          src="/hero.jpg"
+          alt="Hero"
+          width={1920}
+          height={1080}
+          className={styles.heroimg}
+          priority
+        />
+        <div className={styles.overlayContent}>
+          <Link href="/Booking" className={`${styles.herobtn} button`}>
+            BOOK HER
+          </Link>
+        </div>
+      </section>
+
+      <StatsCounter />
+
+      <Anmeld
+        imageSrc="/landing2.jpg"
+        reviews={allReviews.alle}
+        title="Anmeldelser"
       />
-      <div className={styles.overlayContent}>
-          <Button
-            text={buttonData.text}
-            backgroundColor={buttonData.bgColor}
-            className={styles.herobtn}
-          />
-      </div>
-    </section>
-    <StatsCounter />
-    <Anmeld 
-    imageSrc="/landing2.jpg"
-              reviews={allReviews.alle}
-              title="Anmeldelser"/>
-              <CTACom 
-                    title="Mangler du en dj?"
-                    description="Mangler du en DJ til din fest – hvad enten det er bryllup, fødselsdag eller firmaets sommerfest? Tryk på knappen og kontakt mig i dag for en uforpligtende snak og et skræddersyet tilbud!"
-                    buttonText="BOOK HER"
-                    />
+
+      <CTACom
+        title="Mangler du en dj?"
+        description="Mangler du en DJ til din fest – hvad enten det er bryllup, fødselsdag eller firmaets sommerfest? Tryk på knappen og kontakt mig i dag for en uforpligtende snak og et skræddersyet tilbud!"
+      />
     </section>
   );
-
 }

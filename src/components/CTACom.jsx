@@ -1,17 +1,14 @@
-import Button from "./Button";
 import styles from "./CTACom.module.css";
+import Link from "next/link";
 
-export default function InfoCard({ title, description, buttonText, onButtonClick, buttonColor, buttonTextColor }) {
+export default function CTACom({ title, description }) {
   return (
     <div className={styles.card}>
-      <h2>{title}</h2>
-      <p>{description}</p>
-      <Button
-        text={buttonText}
-        onClick={onButtonClick}
-        backgroundColor={buttonColor}
-        textColor={buttonTextColor}
-      />
+      <h2 className={styles.title}>{title}</h2>
+      <p className={styles.description}>{description}</p>
+      <Link href="/Booking" className="button">
+        Book nu
+      </Link>
     </div>
   );
 }

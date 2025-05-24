@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Anmeld.module.css";
 
 export default function Anmeld({ imageSrc, reviews, title = "Anmeldelser" }) {
@@ -14,7 +15,12 @@ export default function Anmeld({ imageSrc, reviews, title = "Anmeldelser" }) {
 
   const renderStars = (count) => {
     return Array.from({ length: 5 }, (_, i) => (
-      <span key={i} className={i < count ? styles.starFilled : styles.starEmpty}>★</span>
+      <span
+        key={i}
+        className={i < count ? styles.starFilled : styles.starEmpty}
+      >
+        ★
+      </span>
     ));
   };
 
@@ -26,16 +32,30 @@ export default function Anmeld({ imageSrc, reviews, title = "Anmeldelser" }) {
 
       <div className={styles.reviewContent}>
         <h2>{title}</h2>
-        <p className={styles.reviewText}>"{reviews[activeIndex].text}"</p>
-        <div className={styles.reviewerInfo}>
-          <span className={styles.reviewerName}>– {reviews[activeIndex].name}</span>
-          <div className={styles.stars}>
-            {renderStars(reviews[activeIndex].stars)}
-          </div>
-        </div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeIndex}
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.4 }}
+          >
+            <p className={styles.reviewText}>"{reviews[activeIndex].text}"</p>
+            <div className={styles.reviewerInfo}>
+              <span className={styles.reviewerName}>
+                – {reviews[activeIndex].name}
+              </span>
+              <div className={styles.stars}>
+                {renderStars(reviews[activeIndex].stars)}
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
 
         <div className={styles.controls}>
-          <button className={styles.andbtn} onClick={prevReview}>←</button>
+          <button className={styles.andbtn} onClick={prevReview}>
+            ←
+          </button>
           <div className={styles.dots}>
             {reviews.map((_, i) => (
               <span
@@ -45,7 +65,9 @@ export default function Anmeld({ imageSrc, reviews, title = "Anmeldelser" }) {
               />
             ))}
           </div>
-          <button className={styles.andbtn} onClick={nextReview}>→</button>
+          <button className={styles.andbtn} onClick={nextReview}>
+            →
+          </button>
         </div>
       </div>
     </section>

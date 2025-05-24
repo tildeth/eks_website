@@ -1,4 +1,7 @@
-import styles from './FaqCom.module.css';
+"use client"
+import styles from "./FaqCom.module.css";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 const faqItems = [
   {
@@ -36,14 +39,41 @@ const faqItems = [
 ];
 
 export default function FaqCom() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section className={styles.faq}>
       {faqItems.map((item, index) => (
         <div key={index}>
-          <details>
-            <summary className={styles.summary}>{item.question}</summary>
-            <div className={styles.detailsContent}>{item.answer}</div>
-          </details>
+          <div
+            className={styles.summary}
+            onClick={() => toggle(index)}
+            role="button"
+            aria-expanded={openIndex === index}
+            tabIndex={0}
+          >
+            {item.question}
+            <span className={styles.symbol}>{openIndex === index ? "-" : "+"}</span>
+          </div>
+
+          <AnimatePresence>
+            {openIndex === index && (
+              <motion.div
+                className={styles.detailsContent}
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: "auto", opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                {item.answer}
+              </motion.div>
+            )}
+          </AnimatePresence>
+
           <div className={styles.line_faq}></div>
         </div>
       ))}
