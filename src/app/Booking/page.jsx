@@ -28,9 +28,9 @@ const contentData = {
   privat: {
     title: "Privat",
     text: `Uanset om det er bryllup, fødselsdag, jubilæum eller en anden særlig anledning, sørger jeg for, at musikken matcher både stemningen og dine ønsker. Med mange års erfaring i at læse publikum og skabe det rette flow, sikrer jeg, at dansegulvet ikke står tomt. Jeg spiller bredt – lige fra festklassikere til nyeste hits – og tilpasser altid stilen til gæsterne og stemningen. Derudover tilbyder jeg professionelt lyd- og lysudstyr og rådgiver gerne om effekter, lyssætning og andre detaljer, der gør din fest helt uforglemmelig.`,
-    image: "/privat1.JPG",
+    image: "/privat1.avif",
     imageAlt: "Privat fest billede",
-    anmeldImg: "/privatand.JPG",
+    anmeldImg: "/privatand.avif",
   },
   erhverv: {
     title: "Erhverv",
@@ -40,17 +40,17 @@ Som DJ til erhverv leverer jeg en professionel og fleksibel musikoplevelse, der 
 sørger jeg for et dansegulv med god energi 
 og højt humør. 
 Musikken skræddersys til jeres ønsker – fra afslappet loungestemning under middagen til fuld fest senere på aftenen.`,
-    image: "/firma1.JPG",
+    image: "/firma1.avif",
     imageAlt: "Firma fest billede",
-    anmeldImg: "/firmaand.JPG",
+    anmeldImg: "/firmaand.avif",
   },
   klub: {
     title: "Klub booking",
     text: `Skal du bruge en DJ til klub, diskotek eller festival? Jeg leverer høj energi, stærk musikalsk timing og et solidt mix, der holder publikum i gang hele natten. Med erfaring fra både intime klubmiljøer og udendørsscener tilpasser jeg mit set og vibe til stemningen og publikum – uanset størrelse og format. 
 Musikken spænder bredt, men altid med fokus på flow, energi og en fest, man husker. Jeg stiller med professionelt gear, hvis det ønskes, og er vant til at samarbejde med lydfolk, teknikere og scenecrew for at sikre en gnidningsfri afvikling.`,
-    image: "/klub1.JPG",
+    image: "/klub1.avif",
     imageAlt: "Klub fest billede",
-    anmeldImg: "/kluband.JPG",
+    anmeldImg: "/kluband.avif",
   },
 };
 

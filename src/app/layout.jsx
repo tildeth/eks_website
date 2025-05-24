@@ -27,6 +27,11 @@ const lexendExa = Lexend_Exa({
 export const metadata = {
   title: "DJ Kristian Bak",
   description: "Musik til alle dine events",
+    icons: {
+    icon: "/favicon-32x32.png",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

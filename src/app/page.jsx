@@ -58,7 +58,7 @@ export default function HomePage() {
     <section>
       <section className={styles.hero}>
         <Image
-          src="/hero.jpg"
+          src="/hero.avif"
           alt="Hero"
           width={1920}
           height={1080}
@@ -75,7 +75,7 @@ export default function HomePage() {
       <StatsCounter />
 
       <Anmeld
-        imageSrc="/landing2.JPG"
+        imageSrc="/landing2.avif"
         reviews={allReviews.alle}
         title="Anmeldelser"
       />
