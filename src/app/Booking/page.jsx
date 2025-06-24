@@ -20,7 +20,6 @@ const reviewsData = {
   klub: [
     { text: "Skabte god energi i hele klubben – gæsterne elskede ham!", name: "Thor, Old Irish Pub", stars: 5 },
     { text: "Virkelig nem at sammenarbejde med!", name: "Melissa, Eventbooker", stars: 5 },
-    { text: "Nice", name: "Jara, Old Irish Pub", stars: 5 },
   ],
 };
 
