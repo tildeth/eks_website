@@ -11,7 +11,7 @@ export default function OmMigCom() {
       heading: "Hvem er jeg?",
       text: `Jeg hedder Kristian, og har DJ’et i over 10 år – til alt fra små private fester til store bryllupper og firmaarrangementer. 
 Det hele begyndte med en kærlighed til musik og en nysgerrighed på at få folk til at danse, og det er stadig dét, der driver mig i dag. 
-Når jeg ikke står bag pulten, nyder jeg livet med familie, venner og min hund Kanye. 
+Når jeg ikke står bag pulten, nyder jeg livet med familie og venner. 
 For mig handler en god fest om mere end bare lyd – det handler om stemning, nærvær og at skabe minder sammen.`,
       image: "/ommig1.avif",
       reverse: false,

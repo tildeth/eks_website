@@ -4,58 +4,43 @@ import { useState } from "react";
 import styles from "./KontaktForm.module.css";
 
 export default function KontaktForm() {
-  const [formData, setFormData] = useState({
-    navn: "",
-    email: "",
-    telefon: "",
-    kategori: "Privat",
-    besked: "",
-  });
-
-  const [status, setStatus] = useState(null);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  const [status, setStatus] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("Sender...");
 
-    try {
-      const res = await fetch("/api/sendKontakt", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+    const formData = new FormData(e.target);
+    formData.append("access_key", "88a38057-f022-4f5c-b5cb-f7171e3219e0"); 
 
-      if (res.ok) {
-        setStatus("success");
-        setFormData({
-          navn: "",
-          email: "",
-          telefon: "",
-          kategori: "Privat",
-          besked: "",
-        });
-      } else {
-        setStatus("error");
-      }
-    } catch (err) {
-      setStatus("error");
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setStatus("Tak for din besked! Jeg vender tilbage hurtigst muligt.");
+      e.target.reset();
+    } else {
+      console.error("Fejl:", data);
+      setStatus("Der opstod en fejl. Prøv igen senere.");
     }
   };
 
+
   return (
-    <form className={styles.form} onSubmit={handleSubmit} autoComplete="on">
+       <form className={styles.form} onSubmit={handleSubmit}>
+      <input type="hidden" name="subject" value="Ny kontaktformular-besked" />
+      <input type="hidden" name="from_name" value="Min Hjemmeside" />
+
       <label className={styles.label} htmlFor="navn">Navn<span className={styles.required}>*</span></label>
       <input
         type="text"
         id="navn"
-        name="navn"
+        name="name"
         required
-        value={formData.navn}
-        onChange={handleChange}
         className={styles.input}
         autoComplete="name"
       />
@@ -66,8 +51,6 @@ export default function KontaktForm() {
         id="email"
         name="email"
         required
-        value={formData.email}
-        onChange={handleChange}
         className={styles.input}
         autoComplete="email"
       />
@@ -76,10 +59,8 @@ export default function KontaktForm() {
       <input
         type="tel"
         id="telefon"
-        name="telefon"
+        name="phone"
         required
-        value={formData.telefon}
-        onChange={handleChange}
         className={styles.input}
         autoComplete="tel"
       />
@@ -89,8 +70,6 @@ export default function KontaktForm() {
         id="kategori"
         name="kategori"
         required
-        value={formData.kategori}
-        onChange={handleChange}
         className={styles.select}
       >
         <option value="Privat">Privat</option>
@@ -102,23 +81,16 @@ export default function KontaktForm() {
       <label className={styles.label} htmlFor="besked">Besked<span className={styles.required}>*</span></label>
       <textarea
         id="besked"
-        name="besked"
+        name="message"
         required
-        value={formData.besked}
-        onChange={handleChange}
         className={styles.textarea}
       />
 
       <button type="submit" className={styles.button}>Send besked</button>
 
-      {status === "success" && (
+      {status && (
         <div className={styles.success}>
-          Tak for din besked! Jeg vender tilbage hurtigst muligt.
-        </div>
-      )}
-      {status === "error" && (
-        <div className={styles.error}>
-          Der opstod en fejl... Prøv igen!
+          {status}
         </div>
       )}
     </form>
