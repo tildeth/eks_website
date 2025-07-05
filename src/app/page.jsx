@@ -11,23 +11,8 @@ export default function HomePage() {
   const allReviews = {
     alle: [
       {
-        text: "Super professionel og venlig oplevelse – anbefales varmt!",
-        name: "Maria H.",
-        stars: 5,
-      },
-      {
-        text: "Tryg og god stemning hele vejen igennem.",
-        name: "Jesper L.",
-        stars: 5,
-      },
-      {
-        text: "Fik præcis det, jeg håbede på – super oplevelse.",
-        name: "Sofie M.",
-        stars: 4,
-      },
-      {
         text: "Effektiv og professionel – vores firmafester er blevet meget bedre.",
-        name: "Jonas – GetWhy",
+        name: "Jonas",
         stars: 5,
       },
       {
@@ -43,11 +28,6 @@ export default function HomePage() {
       {
         text: "Skabte god energi i hele klubben – gæsterne elskede ham!",
         name: "Thor, Old Irish Pub",
-        stars: 5,
-      },
-      {
-        text: "Virkelig nem at sammenarbejde med!",
-        name: "Melissa, Eventbooker",
         stars: 5,
       },
       { text: "Nice, very professionel", name: "Jara, Old Irish Pub", stars: 5 },

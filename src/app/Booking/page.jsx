@@ -9,17 +9,13 @@ import KontaktForm from "@/components/KontaktForm";
 const reviewsData = {
   privat: [
     { text: "Super professionel og venlig oplevelse – anbefales varmt!", name: "Maria H.", stars: 5 },
-    { text: "Tryg og god stemning hele vejen igennem.", name: "Jesper L.", stars: 5 },
-    { text: "Fik præcis det, jeg håbede på – super oplevelse.", name: "Sofie M.", stars: 4 },
   ],
   erhverv: [
-    { text: "Effektiv og professionel – vores firmafester er blevet meget bedre.", name: "Jonas – GetWhy", stars: 5 },
+    { text: "Effektiv og professionel – vores firmafester er blevet meget bedre.", name: "Jonas", stars: 5 },
     { text: "Tydelig erfaring med erhvervskunder.", name: "Martin, Frederiksberg Kommune", stars: 4 },
-    { text: "Levede op til forventningerne til julefrokosten.", name: "Jacob T.", stars: 5 },
   ],
   klub: [
     { text: "Skabte god energi i hele klubben – gæsterne elskede ham!", name: "Thor, Old Irish Pub", stars: 5 },
-    { text: "Virkelig nem at sammenarbejde med!", name: "Melissa, Eventbooker", stars: 5 },
   ],
 };
 
