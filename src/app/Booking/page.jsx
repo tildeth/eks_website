@@ -8,11 +8,12 @@ import KontaktForm from "@/components/KontaktForm";
 
 const reviewsData = {
   privat: [
-    { text: "Super professionel og venlig oplevelse – anbefales varmt!", name: "Maria H.", stars: 5 },
+    { text: "Vi bookede Kristian til en fælles 30 års fødselsdag, og nøj hvor var det fedt! Kristian snakkede med os nogle måneder op til festen, og bad os om at lave en playliste til inspiration, for at sikre den fest vi ønskede.Han kom og satte DJ pult, lys og røgmaskine op i god tid før festen og testede at alt virkede.Til selve festen mærkede han stemningen, om han skulle spille noget chill og lækkert eller få folk ud på dansegulvet til noget mere hårdt musik.Musikken var en musikalsk overraskelse, og Kristian spillede nogle kendte numre, men gav dem nyt liv ved at mixe andre beats indover. Vi synes det var så godt, at vi betalte for en time mere.", name: "Jonas Plambæk", stars: 5 },
+    { text: "Vi bookede Kristian til vores bryllup, og havde en god dialog et godt stykke tid inden festen.Selvom vi havde specielle ønsker, der lå lidt mere skævt at Kristians vanlige genrer, satte han sig tilpas grundigt ind i ønskerne, så man skulle tro han havde disse ønsker som kernekompetencer. Ordentlig forberedelse betaler sig.Vi vil tænke på Kristian næste gang vi skal holde fest!", name: "Mikkel", stars: 5 },
   ],
   erhverv: [
-    { text: "Effektiv og professionel – vores firmafester er blevet meget bedre.", name: "Jonas", stars: 5 },
-    { text: "Tydelig erfaring med erhvervskunder.", name: "Martin, Frederiksberg Kommune", stars: 4 },
+    
+    { text: "Han er god til at tilpasse hvert set til den specifikke fest, til de mennesker der er med, og til den stemning der er, som ganske naturligt forandrer sig i løbet af aftenen. Vi har flere gange benyttet Kristian som DJ til vores firmaevents, herunder julefrokoster og sommerfester. Altid glad for at hjælpe til med at skabe en fantastisk aften, en fest bag pulten, og god til at fange og forlænge den gode stemning og sørge for at folk får danset en masse.", name: "Martin, Frederiksberg Kommune", stars: 5 }
   ],
   klub: [
     { text: "Skabte god energi i hele klubben – gæsterne elskede ham!", name: "Thor, Old Irish Pub", stars: 5 },
