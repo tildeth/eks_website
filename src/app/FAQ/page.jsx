@@ -14,7 +14,7 @@ export default function FAQPage() {
     >
       <h2 className={styles.heading}>FAQ</h2>
       <p className={styles.introText}>
-        Her kan du finde svar på de mest hyppige spørgsmål, jeg får i forbindelse med booking. Skulle du ikke finde det, du leder efter, er du meget velkommen til at sende mig en mail på email@email.dk.
+        Her kan du finde svar på de mest hyppige spørgsmål, jeg får i forbindelse med booking. Skulle du ikke finde det, du leder efter, er du meget velkommen til at sende mig en mail på djkristianbak@gmail.com.
       </p>
 
       <FaqCom />
